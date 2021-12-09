@@ -21,3 +21,18 @@ class RegistrationForm(forms.Form):
 class LoginForm(forms.Form):
     username=forms.CharField()
     password=forms.CharField()
+
+class LibraryEditForm(forms.Form):
+    library_name = forms.CharField()
+    address = forms.CharField()
+    city = forms.CharField()
+
+class LibrarySearchForm(forms.Form):
+    library_name = forms.CharField()
+
+class LibraryDeleteForm(forms.Form):
+    library_name = forms.CharField()
+
+
+
+
